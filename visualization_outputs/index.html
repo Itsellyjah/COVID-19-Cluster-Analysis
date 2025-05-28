@@ -1,0 +1,221 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>COVID-19 Cluster Analysis Visualizations</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1 { color: #2c3e50; }
+                h2 { color: #3498db; }
+                .viz-group { margin-bottom: 30px; }
+                ul { list-style-type: none; padding-left: 20px; }
+                li { margin: 10px 0; }
+                a { color: #2980b9; text-decoration: none; }
+                a:hover { text-decoration: underline; }
+                .cluster-info { background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+                .cluster-category { font-weight: bold; color: #2c3e50; }
+                .viz-container { display: flex; flex-wrap: wrap; }
+                .viz-item { margin: 10px; text-align: center; }
+                .viz-item img { max-width: 300px; border: 1px solid #ddd; border-radius: 5px; }
+            </style>
+        </head>
+        <body>
+            <h1>COVID-19 Cluster Analysis Visualizations</h1>
+            
+            <div class="cluster-info">
+                <h2>Cluster Categories</h2>
+                <p><span class="cluster-category">High-Risk Regions (Clusters 0 and 3):</span> 73 countries including Argentina, Australia, Bolivia, Indonesia with high case rates and mortality rates.</p>
+                <p><span class="cluster-category">Healthcare-Strained Regions (Cluster 1):</span> 141 countries including Afghanistan, Albania, Algeria with high hospitalization/ICU utilization.</p>
+                <p><span class="cluster-category">High-Mortality, High-Resource Region (Cluster 2):</span> United States as a single-country cluster with high mortality despite substantial healthcare resources.</p>
+                <p><span class="cluster-category">High-Case, Low-Mortality Regions (Clusters 4, 5, 6, 7):</span> 19 countries including China, Italy, Hong Kong, Malaysia, and several island nations that successfully managed mortality despite high case rates.</p>
+            </div>
+        
+            <h2>All Visualizations</h2>
+            <div class="viz-container">
+        
+                <div class="viz-item">
+                    <a href="cluster_comparison_gmm_cluster.png" target="_blank">
+                        <img src="cluster_comparison_gmm_cluster.png" alt="Cluster Comparison Gmm Cluster">
+                        <p>Cluster Comparison Gmm Cluster</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_distribution_gmm_cluster.png" target="_blank">
+                        <img src="cluster_distribution_gmm_cluster.png" alt="Cluster Distribution Gmm Cluster">
+                        <p>Cluster Distribution Gmm Cluster</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_0.png" target="_blank">
+                        <img src="cluster_profile_0.png" alt="Cluster Profile 0">
+                        <p>Cluster Profile 0</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_1.png" target="_blank">
+                        <img src="cluster_profile_1.png" alt="Cluster Profile 1">
+                        <p>Cluster Profile 1</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_2.png" target="_blank">
+                        <img src="cluster_profile_2.png" alt="Cluster Profile 2">
+                        <p>Cluster Profile 2</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_3.png" target="_blank">
+                        <img src="cluster_profile_3.png" alt="Cluster Profile 3">
+                        <p>Cluster Profile 3</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_4.png" target="_blank">
+                        <img src="cluster_profile_4.png" alt="Cluster Profile 4">
+                        <p>Cluster Profile 4</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_5.png" target="_blank">
+                        <img src="cluster_profile_5.png" alt="Cluster Profile 5">
+                        <p>Cluster Profile 5</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_6.png" target="_blank">
+                        <img src="cluster_profile_6.png" alt="Cluster Profile 6">
+                        <p>Cluster Profile 6</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profile_7.png" target="_blank">
+                        <img src="cluster_profile_7.png" alt="Cluster Profile 7">
+                        <p>Cluster Profile 7</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profiles_healthcare-strained_regions.png" target="_blank">
+                        <img src="cluster_profiles_healthcare-strained_regions.png" alt="Cluster Profiles Healthcare-Strained Regions">
+                        <p>Cluster Profiles Healthcare-Strained Regions</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profiles_high-case,_low-mortality_regions.png" target="_blank">
+                        <img src="cluster_profiles_high-case,_low-mortality_regions.png" alt="Cluster Profiles High-Case, Low-Mortality Regions">
+                        <p>Cluster Profiles High-Case, Low-Mortality Regions</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profiles_high-mortality,_high-resource_region.png" target="_blank">
+                        <img src="cluster_profiles_high-mortality,_high-resource_region.png" alt="Cluster Profiles High-Mortality, High-Resource Region">
+                        <p>Cluster Profiles High-Mortality, High-Resource Region</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_profiles_high-risk_regions.png" target="_blank">
+                        <img src="cluster_profiles_high-risk_regions.png" alt="Cluster Profiles High-Risk Regions">
+                        <p>Cluster Profiles High-Risk Regions</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_scatter_case_rate_per_100k_vs_mortality_rate_per_100k.png" target="_blank">
+                        <img src="cluster_scatter_case_rate_per_100k_vs_mortality_rate_per_100k.png" alt="Cluster Scatter Case Rate Per 100K Vs Mortality Rate Per 100K">
+                        <p>Cluster Scatter Case Rate Per 100K Vs Mortality Rate Per 100K</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="cluster_scatter_vaccination_rate_pct_vs_case_fatality_rate_pct.png" target="_blank">
+                        <img src="cluster_scatter_vaccination_rate_pct_vs_case_fatality_rate_pct.png" alt="Cluster Scatter Vaccination Rate Pct Vs Case Fatality Rate Pct">
+                        <p>Cluster Scatter Vaccination Rate Pct Vs Case Fatality Rate Pct</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="feature_heatmap_actual_gmm_cluster.png" target="_blank">
+                        <img src="feature_heatmap_actual_gmm_cluster.png" alt="Feature Heatmap Actual Gmm Cluster">
+                        <p>Feature Heatmap Actual Gmm Cluster</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="feature_heatmap_gmm_cluster.png" target="_blank">
+                        <img src="feature_heatmap_gmm_cluster.png" alt="Feature Heatmap Gmm Cluster">
+                        <p>Feature Heatmap Gmm Cluster</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_new_cases_per_million.png" target="_blank">
+                        <img src="time_series_new_cases_per_million.png" alt="Time Series New Cases Per Million">
+                        <p>Time Series New Cases Per Million</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_new_cases_per_million_smoothed.png" target="_blank">
+                        <img src="time_series_new_cases_per_million_smoothed.png" alt="Time Series New Cases Per Million Smoothed">
+                        <p>Time Series New Cases Per Million Smoothed</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_new_deaths_per_million.png" target="_blank">
+                        <img src="time_series_new_deaths_per_million.png" alt="Time Series New Deaths Per Million">
+                        <p>Time Series New Deaths Per Million</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_new_deaths_per_million_smoothed.png" target="_blank">
+                        <img src="time_series_new_deaths_per_million_smoothed.png" alt="Time Series New Deaths Per Million Smoothed">
+                        <p>Time Series New Deaths Per Million Smoothed</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_total_cases_per_million.png" target="_blank">
+                        <img src="time_series_total_cases_per_million.png" alt="Time Series Total Cases Per Million">
+                        <p>Time Series Total Cases Per Million</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_total_cases_per_million_smoothed.png" target="_blank">
+                        <img src="time_series_total_cases_per_million_smoothed.png" alt="Time Series Total Cases Per Million Smoothed">
+                        <p>Time Series Total Cases Per Million Smoothed</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_total_deaths_per_million.png" target="_blank">
+                        <img src="time_series_total_deaths_per_million.png" alt="Time Series Total Deaths Per Million">
+                        <p>Time Series Total Deaths Per Million</p>
+                    </a>
+                </div>
+            
+                <div class="viz-item">
+                    <a href="time_series_total_deaths_per_million_smoothed.png" target="_blank">
+                        <img src="time_series_total_deaths_per_million_smoothed.png" alt="Time Series Total Deaths Per Million Smoothed">
+                        <p>Time Series Total Deaths Per Million Smoothed</p>
+                    </a>
+                </div>
+            
+            </div>
+        </body>
+        </html>
+        
